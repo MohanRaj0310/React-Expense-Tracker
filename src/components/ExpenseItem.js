@@ -1,4 +1,5 @@
 import './ExpenseItem.css';
+
 function ExpenseItem (props){
   const expenseDate = new Date(2021, 6, 10)
   const expenseTitle = "Car Insurance"
