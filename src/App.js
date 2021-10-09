@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses";
+
 const Template = function (props){
   console.log(arguments)
   return (
