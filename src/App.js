@@ -1,7 +1,7 @@
 import Expenses from "./components/Expenses/Expenses";
 
 const Template = function (props){
-  console.log(arguments)
+  // console.log(arguments)
   return (
     <div>
       <h1 className="expense-item__price">{props.title}</h1>
@@ -31,7 +31,7 @@ const App = () => {
     {
       id: 'e4',
       title: 'Grocery Item',
-      amount: 67000,
+      amount: 50000,
       date: new Date(2021, 11, 18)
     }
   ]
