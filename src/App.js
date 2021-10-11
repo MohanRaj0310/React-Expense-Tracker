@@ -8,7 +8,7 @@ const Template = function (props){
     </div>
   )
 }
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 'e1',
