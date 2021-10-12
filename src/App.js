@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const Template = function (props){
   // console.log(arguments)
@@ -37,7 +38,7 @@ const App = () => {
   ]
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses expenses={expenses}/>
       <Template title={expenses[2].title}/>
       {/*<Template title={expenses.forEach((userInfo)=> {

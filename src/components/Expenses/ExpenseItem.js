@@ -6,18 +6,16 @@ import Card from '../UI/Card';
 const ExpenseItem = (props) => {
   
   const [title, setTitle] = useState(props.title)//destructuring array
+  console.log(title)
   const clickHandler = () => {
     setTitle('updated')
-    console.log(props)//default value
-    console.log(props.title)//default value
-    console.log(title)//updated value
   }
   
   const [amount, setAmount] = useState(props.amount)
   const clickHandler2 = () => {
     setAmount(10000)
   }
-  
+
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date}/>
