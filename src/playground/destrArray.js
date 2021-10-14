@@ -68,43 +68,132 @@
 
 /****************************working with object*************/
 
-const p1 = {
-  name: 'abc',
-  year: 1999,
-  age: 23,
-  address : {
-    city: 'bangalore',
-    code : 625513
-  },
+// const p1 = {
+//   name: 'abc',
+//   year: 1999,
+//   age: 23,
+//   address : {
+//     city: 'bangalore',
+//     code : 625513
+//   },
+// }
+
+// const p2 = {
+//   name: 'xyz',
+//   year: 2000,
+//   age: 22,
+//   address : {
+//     city: 'mysore',
+//     code : 625514
+//   },
+// }
+
+// const overRideInfo = {...p1, ...p2}
+// console.log(overRideInfo)
+
+// const {name, gender = "unknown",...rest} = p2
+// console.log(rest)
+// console.log(gender)
+
+// //functions
+
+// const func = (obj) => console.log(obj)
+// func(p1)
+
+// const func1 = ({name, gender = {
+//   title: 'mohan',
+//   age: 3489348934234089
+// }}) => console.log(name, gender)//abc
+// func1(p1)
+
+// other way of defining
+
+// const useState1 = (arg) => {
+//   return [1, 0, arg.title]
+// }
+
+// const [userInput, setInput, ...rest] = useState1({
+//   title: '',
+//   amount: '',
+//   date: ''
+// })
+
+// console.log(userInput)
+// console.log(rest)
+
+// const stateFunc = () => [0, 1, true, '', {
+//   methods : function (arg){
+//     console.log('from object method')
+//     return arg + 100
+//   }
+// }]
+
+// const [x, y, z, s, d] = stateFunc()
+// console.log(d)
+
+// console.log(d.methods(100))//200
+
+// // wroking with state concept
+
+// const obj = {
+//   key1 : 'mohan',
+//   key2: 'viki'
+// }
+
+// function state (val){
+//   obj.key1 = val
+// }
+
+// state('rajuuuuu')
+
+// console.log(obj.key1)//rajuu
+// state({
+
+// })
+
+// assignment
+
+function squirrelsPlay(temp, isSummer) {
+  if (isSummer === true){
+    if (temp >= 60 && temp <= 90) {
+      console.log(true)
+    } else if (temp > 90 && temp <= 100){
+      console.log(true)
+    }
+  } 
+  else if (isSummer === false){
+    if (temp >= 60 && temp <= 90){
+      console.log(true)
+    } else if (temp > 90 && temp <= 100){
+      console.log(false)
+    }
+  }
 }
 
-const p2 = {
-  name: 'xyz',
-  year: 2000,
-  age: 22,
-  address : {
-    city: 'mysore',
-    code : 625514
-  },
-}
+squirrelsPlay(70, false)//true
+squirrelsPlay(95, false)//false
+squirrelsPlay(95, true)//true
 
-const overRideInfo = {...p1, ...p2}
-console.log(overRideInfo)
+var x = 90;
 
-const {name, gender = "unknown",...rest} = p2
-console.log(rest)
-console.log(gender)
+//(x === 90 && console.log(true)) === undefined || console.log(false)
 
-//functions
 
-const func = (obj) => console.log(obj)
-func(p1)
 
-const func1 = ({name, gender = {
-  title: 'mohan',
-  age: 3489348934234089
-}}) => console.log(name, gender)//abc
-func1(p1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
