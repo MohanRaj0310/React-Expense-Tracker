@@ -63,8 +63,36 @@
 
 // console.log(readableDay, month, year)
 
-var userName = "sjwioud"
-console.log(name)
+const expenses = [
+  {
+    id: 1,
+    title: 'shopping things',
+    amount: 2000,
+    date: new Date(2021, 7, 15)
+  },
+  {
+    id: 2,
+    title: 'buy wisky',
+    amount: 750,
+    date: new Date(2021, 5, 16)
+  },
+  {
+    id: 3,
+    title: 'HomeLoan',
+    amount: 30000,
+    date: new Date(2021, 10, 17)
+  },
+  {
+    id: 4,
+    title: 'Grocery Item',
+    amount: 50000,
+    date: new Date(2021, 11, 18)
+  }
+]
+
+console.log(expenses[3])
+
+
 
 
 
