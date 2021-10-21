@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
-import ExpenseForm from './components/NewExpense/ExpenseForm';
 
 const DUMMY_EXPENSES = [
   {
@@ -27,10 +26,14 @@ const DUMMY_EXPENSES = [
 ];
 
 const App = () => {
+
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
   console.log(expenses)
+  
   const addExpenseHandler = (expense) => {
+    console.log('line from 34', expense)
     setExpenses((prevExpenses) => {
+      console.log(prevExpenses, 'from 36')
       return [expense, ...prevExpenses];
     });
   };

@@ -63,34 +63,78 @@
 
 // console.log(readableDay, month, year)
 
-const expenses = [
+// const expenses = [
+//   {
+//     id: 1,
+//     title: 'shopping things',
+//     amount: 2000,
+//     date: new Date(2021, 7, 15)
+//   },
+//   {
+//     id: 2,
+//     title: 'buy wisky',
+//     amount: 750,
+//     date: new Date(2021, 5, 16)
+//   },
+//   {
+//     id: 3,
+//     title: 'HomeLoan',
+//     amount: 30000,
+//     date: new Date(2021, 10, 17)
+//   },
+//   {
+//     id: 4,
+//     title: 'Grocery Item',
+//     amount: 50000,
+//     date: new Date(2021, 11, 18)
+//   }
+// ]
+
+// console.log(expenses[3])
+
+const array = [
+  {
+    id: 0,
+    num : 90
+  },
   {
     id: 1,
-    title: 'shopping things',
-    amount: 2000,
-    date: new Date(2021, 7, 15)
-  },
-  {
-    id: 2,
-    title: 'buy wisky',
-    amount: 750,
-    date: new Date(2021, 5, 16)
-  },
-  {
-    id: 3,
-    title: 'HomeLoan',
-    amount: 30000,
-    date: new Date(2021, 10, 17)
-  },
-  {
-    id: 4,
-    title: 'Grocery Item',
-    amount: 50000,
-    date: new Date(2021, 11, 18)
+    num : 78
   }
 ]
 
-console.log(expenses[3])
+const getReceive = (val) => {
+  let ret = val()
+  console.log(ret)//get anonymous array
+}
+
+getReceive((x) => {
+  return [...array, {
+    id: 1,
+    num: 100
+  }]
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
